@@ -1,0 +1,158 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-flex {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav__item {
+    margin-right: 50px;
+
+    &:last-child {
+    margin-right: 0px;}
+}
+
+.site-nav__studio-link.current {
+    color: var(--active-color);
+    position: relative;
+}
+
+.site-nav__studio-link {
+    color: #212121;
+    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--animation);
+&:hover,
+&:focus {
+    color: var(--active-color);}
+}
+
+.site-nav__portfolio-link.current {
+    color: var(--active-color);
+    position: relative;
+}
+
+.site-nav__portfolio-link {
+    color: #212121;
+    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--animation);
+    
+    &:hover,
+    &:focus { color: var(--active-color);}
+}
+.site-nav__contacts-link {
+    color: #212121;
+    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--animation);
+
+&:hover,
+&:focus {
+    color: var(--active-color);}
+}
+.adres-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+
+    display: flex;
+    margin-left: auto;
+}
+
+.adres-header__item {
+    margin-right: 50px;
+&:last-child {
+    margin-right: 0px;}
+}
+
+.adres-header__mail {
+    color: #757575;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--active-color)}
+
+    &:hover .envelope {
+        fill: var(--active-color)}
+
+    &:focus .envelope {
+        fill: var(--active-color)}
+}
+.envelope {
+    margin-right: 10px;
+    fill: #757575;
+    transition: fill var(--animation);
+
+    &:hover,
+    &:focus {
+    fill: var(--active-color)}
+}
+.adres-header__tel {
+    color: #757575;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--active-color)}
+
+    &:hover .smartphone {
+        fill: var(--active-color)}
+
+    &:focus .smartphone {
+        fill: var(--active-color)}
+}
+    
+.smartphone {
+    margin-right: 10px;
+    fill: #757575;
+
+    transition: fill var(--animation);
+
+    &:hover,
+    &:focus {
+    fill: var(--active-color)}
+}
