@@ -1,0 +1,40 @@
+.social-link-footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.social-link-footer {
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-link-footer__item {
+    margin-right: 10px;
+&:last-child {
+    margin-right: 0px;}
+}
+
+.social-link-footer__img {
+    text-decoration: none;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+
+    transition: background-color var(--animation);
+
+    &:hover,
+    &:focus {
+    background-color: var(--active-color)}
+}
+
+.social-link-footer__icon {
+    fill: #FFFFFF;
+}
