@@ -4,6 +4,10 @@
 
 .header-flex {
     display: flex;
+    @media screen and(max-width: 767px) {
+       justify-content: space-between; 
+       align-items: center;
+    }
 }
 
 .header-nav {
@@ -12,14 +16,17 @@
 }
 
 .site-nav {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    list-style-type: none;
+    display:none;
 
-    display: flex;
-    margin-left: 93px;
+    @media screen and(min-width: 768px) {
+        display: flex;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        list-style-type: none;
+        margin-left: 93px;
+    }   
 }
 
 .site-nav__item {
@@ -78,20 +85,39 @@
     color: var(--active-color);}
 }
 .adres-header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    list-style-type: none;
-
-    display: flex;
-    margin-left: auto;
+    display: none; 
+    @media screen and(min-width: 768px) and(max-width: 1199px) {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        list-style-type: none;   
+    }
+    @media screen and(min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
+           
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        list-style-type: none;
+    }
 }
 
 .adres-header__item {
+    @media screen and(min-width: 1200px) {
     margin-right: 50px;
+    
 &:last-child {
     margin-right: 0px;}
+    }
 }
 
 .adres-header__mail {
@@ -100,9 +126,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    @media screen and(min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    
     transition: color var(--animation);
 
     &:hover,
@@ -130,8 +158,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and(min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    
 
     transition: color var(--animation);
 

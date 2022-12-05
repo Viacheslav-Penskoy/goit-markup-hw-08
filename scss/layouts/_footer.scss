@@ -5,13 +5,32 @@
 }
 
 .f-flex {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    text-align: center;
+   
+    @media screen and(min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    } 
+    @media screen and(min-width: 1200px) {
+        flex-wrap: nowrap;
+        text-align: left;
+    }
 }
 
-.f-flex__div:first-child {
-    margin-right: 70px;
+.f-flex__logo-address {
+    margin-bottom: 60px;
+
+    @media screen and(min-width: 768px) {
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        margin-right: 70px;
+        margin-bottom: 0px;
+    }  
 }
 
 .address {
@@ -66,4 +85,13 @@
     &:hover,
     &:focus {
     color: var(--active-color)}
+}
+.f-flex__social-link { 
+    @media screen and(max-width: 767px) {
+        margin-bottom: 60px;    
+    }
+    @media screen and(min-width: 768px) {
+        margin-bottom: 0px;
+    }
+
 }
