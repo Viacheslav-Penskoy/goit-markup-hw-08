@@ -1,5 +1,9 @@
 .subscribe__form {
+    @media screen and(min-width: 1200px) {
     margin-left: 93px;
+    }
+    
+    
 }
 
 .subscribe__title {
@@ -13,13 +17,19 @@
 }
 
 .subscribe {
-    display: flex;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and(min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    }
 }
 
 .subscribe__input {
     display: block;
-    width: 350px;
+    width: 100%;
     height: 50px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -28,6 +38,9 @@
 
     padding: 16px 15px;
     transition: border-color var(--animation);
+    @media screen and(min-width: 480px) {
+        width: 350px;
+    }
 }
 
 .subscribe__input::placeholder {
@@ -77,6 +90,11 @@
     &:focus {
     color: #FFFFFF;
     background-color: #188CE8;}
+
+    @media screen and(max-width: 1199px) {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
 }
 
 .subscribe__telegram-icon {
