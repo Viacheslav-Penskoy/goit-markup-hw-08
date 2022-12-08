@@ -2,8 +2,6 @@
     @media screen and(min-width: 1200px) {
     margin-left: 93px;
     }
-    
-    
 }
 
 .subscribe__title {
@@ -29,7 +27,7 @@
 
 .subscribe__input {
     display: block;
-    width: 100%;
+    width: 450px;
     height: 50px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -38,7 +36,8 @@
 
     padding: 16px 15px;
     transition: border-color var(--animation);
-    @media screen and(min-width: 480px) {
+    
+    @media screen and(min-width: 1200px) {
         width: 350px;
     }
 }

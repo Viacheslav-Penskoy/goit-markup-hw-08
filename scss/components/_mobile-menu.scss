@@ -44,14 +44,13 @@
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
-    padding-left: 28px;
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
     height: 100%;
 }
 .mobile-menu__close-button {
@@ -74,6 +73,7 @@
 } 
 .mobile-menu__nav {
     list-style: none;
+    padding-left: 40px;
 }
 
 .mobile-menu__nav-item:not(:last-child) {
@@ -96,7 +96,9 @@
 .mobile-menu__nav-current {
     color: var(--active-color);
 }
-
+.mobile-menu__contacts-container {
+    padding-left: 40px;
+}
 .mobile-menu__contacts {
     margin-bottom: 64px;
     list-style: none;
